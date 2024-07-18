@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>데이터 기반 현장 연구 사례</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        .slide {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #f0f0f0;
+            overflow-y: auto;
+        }
+        .slide.active {
+            display: block;
+        }
+        .stage {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .content, .dashboard {
+            width: 48%;
+            padding: 10px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 24px;
+        }
+        h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        svg {
+            background-color: white;
+            border: 1px solid #ddd;
+        }
+        .nav-buttons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+        button {
+            font-size: 16px;
+            padding: 10px 20px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="slide1" class="slide active">
+        <h1>AI 펭톡을 활용한 초등영어 학습부진아 지도 사례 연구</h1>
+        <div class="stage">
+            <div class="content">
+                <h3>인식(Awareness)</h3>
+                <p>
+                    - AI 펭톡 LMS 데이터로 학습 참여도 모니터링<br>
+                    - 사전-사후 성취도 검사로 학습 진행 상황 파악<br>
+                    - 6명의 학습부진아 학생 특별 관리
+                </p>
+            </div>
+            <div class="dashboard">
+                <svg width="100%" height="200" viewBox="0 0 300 200">
+                    <text x="150" y="20" text-anchor="middle" font-size="14" font-weight="bold">학생별 학습 참여도</text>
+                    <rect x="30" y="40" width="30" height="140" fill="#ddd" />
+                    <rect x="30" y="180" width="30" height="-70" fill="#4CAF50" />
+                    <rect x="70" y="40" width="30" height="140" fill="#ddd" />
+                    <rect x="70" y="180" width="30" height="-98" fill="#2196F3" />
+                    <rect x="110" y="40" width="30" height="140" fill="#ddd" />
+                    <rect x="110" y="180" width="30" height="-56" fill="#FFC107" />
+                    <rect x="150" y="40" width="30" height="140" fill="#ddd" />
+                    <rect x="150" y="180" width="30" height="-84" fill="#9C27B0" />
+                    <rect x="190" y="40" width="30" height="140" fill="#ddd" />
+                    <rect x="190" y="180" width="30" height="-112" fill="#FF5722" />
+                    <rect x="230" y="40" width="30" height="140" fill="#ddd" />
+                    <rect x="230" y="180" width="30" height="-42" fill="#795548" />
+                    <text x="150" y="195" text-anchor="middle" font-size="12">학생</text>
+                </svg>
+            </div>
+        </div>
+        <div class="stage">
+            <div class="content">
+                <h3>성찰(Reflection)</h3>
+                <p>
+                    - 8개월간 학생들의 성장 과정 관찰<br>
+                    - 주 3회, 1회당 2~3차시 방과후 수업 데이터 분석<br>
+                    - 교사 관찰 및 면담을 통한 심층 데이터 탐색
+                </p>
+            </div>
+            <div class="dashboard">
+                <svg width="100%" height="200" viewBox="0 0 300 200">
+                    <text x="150" y="20" text-anchor="middle" font-size="14" font-weight="bold">시간에 따른 성장 과정</text>
+                    <line x1="40" y1="180" x2="260" y2="180" stroke="#333" />
+                    <line x1="40" y1="180" x2="40" y2="40" stroke="#333" />
+                    <polyline
+                        fill="none"
+                        stroke="#E91E63"
+                        stroke-width="2"
+                        points="
+                        40,160
+                        80,150
+                        120,130
+                        160,100
+                        200,80
+                        240,60
+                        "
+                    />
+                    <text x="150" y="195" text-anchor="middle" font-size="12">시간</text>
+                    <text x="30" y="110" text-anchor="middle" font-size="12" transform="rotate(-90 30,110)">성취도</text>
+                </svg>
+            </div>
+        </div>
+        <div class="stage">
+            <div class="content">
+                <h3>의미창출(Sense-making)</h3>
+                <p>
+                    - AI 펭톡 활용이 영어 학습에 미치는 영향 분석<br>
+                    - 학습 참여도, 정의적 영역, 영어 성취도 관계 파악<br>
+                    - AI 펭톡 사용 목적과 실제 학습 성과 비교
+                </p>
+            </div>
+            <div class="dashboard">
+                <svg width="100%" height="200" viewBox="0 0 300 200">
+                    <text x="150" y="20" text-anchor="middle" font-size="14" font-weight="bold">학습 영역 관계</text>
+                    <circle cx="150" cy="100" r="80" fill="none" stroke="#333" />
+                    <polygon points="150,20 230,100 150,180 70,100" fill="rgba(33,150,243,0.3)" stroke="#2196F3" />
+                    <text x="150" y="30" text-anchor="middle" font-size="12">참여도</text>
+                    <text x="240" y="105" text-anchor="start" font-size="12">정의적 영역</text>
+                    <text x="150" y="180" text-anchor="middle" font-size="12">성취도</text>
+                    <text x="60" y="105" text-anchor="end" font-size="12">AI 펭톡 활용</text>
+                </svg>
+            </div>
+        </div>
+        <div class="stage">
+            <div class="content">
+                <h3>영향(Impact)</h3>
+                <p>
+                    - AI 펭톡의 긍정적 영향 확인<br>
+                    - 교사의 적극적 개입 필요성 인식<br>
+                    - 향후 AI 펭톡 활용 수업 설계에 연구 결과 반영<br>
+                    - 학습부진아 지원 방안으로 AI 펭톡 활용 제안
+                </p>
+            </div>
+            <div class="dashboard">
+                <svg width="100%" height="200" viewBox="0 0 300 200">
+                    <text x="150" y="20" text-anchor="middle" font-size="14" font-weight="bold">AI 펭톡 효과</text>
+                    <rect x="60" y="40" width="80" height="140" fill="#ddd" />
+                    <rect x="60" y="180" width="80" height="-70" fill="#4CAF50" />
+                    <rect x="160" y="40" width="80" height="140" fill="#ddd" />
+                    <rect x="160" y="180" width="80" height="-112" fill="#4CAF50" />
+                    <text x="100" y="190" text-anchor="middle" font-size="12">사전</text>
+                    <text x="200" y="190" text-anchor="middle" font-size="12">사후</text>
+                    <text x="100" y="100" text-anchor="middle" font-size="14" fill="#333">50%</text>
+                    <text x="200" y="60" text-anchor="middle" font-size="14" fill="#333">80%</text>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div id="slide2" class="slide">
+        <h1>온라인 독서콘텐츠를 활용한 교육과정 연계 독서교육 활성화 방안</h1>
+        <div class="stage">
+            <div class="content">
+                <h3>인식(Awareness)</h3>
+                <p>
+                    - 초등 4학년, 중학교 2, 3학년 학생 독서 활동 모니터링<br>
+                    - 사전 조사를 통한 학생들의 독서 상황 파악
+                </p>
+            </div>
+            <div class="dashboard">
+                <svg width="100%" height="200" viewBox="0 0 300 200">
+                    <text x="150" y="20" text-anchor="middle" font-size="14" font-weight="bold">학년별 독서 활동</text>
+                    <rect x="40" y="40" width="60" height="140" fill="#ddd" />
+                    <rect x="40" y="180" width="60" height="-98" fill="#FF9800" />
+                    <rect x="120" y="40" width="60" height="140" fill="#ddd" />
+                    <rect x="120" y="180" width="60" height="-70" fill="#FF9800" />
+                    <rect x="200" y="40" width="60" height="140" fill="#ddd" />
+                    <rect x="200" y="180" width="60" height="-84" fill="#FF9800" />
+                    <text x="70" y="190" text-anchor="middle" font-size="12">초등 4학년</text>
+                    <text x="150" y="190" text-anchor="middle" font-size="12">중 2학년</text>
+                    <text x="230" y="190" text-anchor="middle" font-size="12">중 3학년</text>
+                </svg>
+            </div>
+        </div>
+        <div class="stage">
+            <div class="content">
+                <h3>성찰(Reflection)</h3>
+                <p>
+                    - 1년간 학생들의 독서 태도와 능력 변화 관찰<br>
+                    - 프로그램 적용 전후 데이터 비교 분석
+                </p>
+            </div>
+            <div class="dashboard">
+                <svg width="100%" height="200" viewBox="0 0 300 200">
+                    <text x="150" y="20" text-anchor="middle" font-size="14" font-weight="bold">독서 태도 변화</text>
+                    <line x1="40" y1="180" x2="260" y2="180" stroke="#333" />
+                    <line x1="40" y1="180" x2="40" y2="40" stroke="#333" />
+                    <polyline
+                        fill="none"
+                        stroke="#FF5722"
+                        stroke-width="2"
+                        points="
+                        40,160
+                        100,140
+                        160,100
+                        220,70
+                        "
+                    />
+                    <text x="150" y="195" text-anchor="middle" font-size="12">시간</text>
+                    <text x="30" y="110" text-anchor="middle" font-size="12" transform="rotate(-90 30,110)">독서 태도</text>
+                </svg>
+            </div>
+        </div>
+        <div class="stage">
+            <div class="content">
+                <h3>의미창출(Sense-making)</h3>
+                <p>
+                    - 온라인 독서콘텐츠가 독서 흥미와 능력에 미치는 영향 분석<br>
+                    - 교육과정 연계 독서교육 프로그램의 효과성 평가
+                </p>
+            </div>
+            <div class="dashboard">
+                <svg width="100%" height="200" viewBox="0 0 300 200">
+                    <text x="150" y="20" text-anchor="middle" font-size="14" font-weight="bold">독서 능력 관계</text>
+                    <circle cx="150" cy="100" r="80" fill="none" stroke="#333" />
+                    <polygon points="150,20 230,100 150,180 70,100" fill="rgba(255,152,0,0.3)" stroke="#FF9800" />
+                    <text x="150" y="30" text-anchor="middle" font-size="12">흥미</text>
+                    <text x="240" y="105" text-anchor="start" font-size="12">이해력</text>
+                    <text x="150" y="180" text-anchor="middle" font-size="12">어휘력</text>
+                    <text x="60" y="105" text-anchor="end" font-size="12">독서량</text>
+                </svg>
