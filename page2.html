@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI 펭톡을 활용한 초등영어 학습부진아 지도 사례 연구</title>
+    <title>인공지능 챗봇 활용 학습 환경에 대한 설계기반연구: 초등 영어 말하기 수업 중심으로</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -29,108 +29,99 @@
             max-width: 100%;
             height: auto;
         }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            .stage {
+                margin-bottom: 20px;
+            }
+        }
     </style>
 </head>
 <body>
-<nav>
+    <nav>
     <a href="index.html">메인 페이지</a> |
     <a href="page1.html">AI 펭톡 사례</a> |
-    <a href="page2.html">AI 펭톡 사례 (상세)</a> |
+    <a href="page2.html">인공지능 챗봇 활용 학습 환경에 대한 설계기반연구: 초등 영어 말하기 수업 중심으로)</a> |
     <a href="page3.html">온라인 독서콘텐츠 사례</a>
 </nav>
-    <h1>AI 펭톡을 활용한 초등영어 학습부진아 지도 사례 연구</h1>
+    <h1>인공지능 챗봇 활용 학습 환경에 대한 설계기반연구: 초등 영어 말하기 수업 중심으로</h1>
     
     <div class="stage">
         <h2>인식(Awareness)</h2>
         <p>
-            - AI 펭톡 LMS 데이터로 학습 참여도 모니터링<br>
-            - 사전-사후 성취도 검사로 학습 진행 상황 파악<br>
-            - 6명의 학습부진아 학생 특별 관리
+            - 태블릿 PC와 LMS로 129명 학생 학습 활동 모니터링<br>
+            - AI 챗봇과의 상호작용 데이터 수집 및 분석
         </p>
-        <svg width="300" height="200" viewBox="0 0 300 200">
-            <text x="150" y="20" text-anchor="middle" font-size="14" font-weight="bold">학생별 학습 참여도</text>
-            <rect x="30" y="40" width="30" height="140" fill="#ddd" />
-            <rect x="30" y="180" width="30" height="-70" fill="#4CAF50" />
-            <rect x="70" y="40" width="30" height="140" fill="#ddd" />
-            <rect x="70" y="180" width="30" height="-98" fill="#2196F3" />
-            <rect x="110" y="40" width="30" height="140" fill="#ddd" />
-            <rect x="110" y="180" width="30" height="-56" fill="#FFC107" />
-            <rect x="150" y="40" width="30" height="140" fill="#ddd" />
-            <rect x="150" y="180" width="30" height="-84" fill="#9C27B0" />
-            <rect x="190" y="40" width="30" height="140" fill="#ddd" />
-            <rect x="190" y="180" width="30" height="-112" fill="#FF5722" />
-            <rect x="230" y="40" width="30" height="140" fill="#ddd" />
-            <rect x="230" y="180" width="30" height="-42" fill="#795548" />
-            <text x="150" y="195" text-anchor="middle" font-size="12">학생</text>
+        <svg viewBox="0 0 300 200">
+            <text x="150" y="20" text-anchor="middle" font-size="14" font-weight="bold">학생-AI 챗봇 상호작용</text>
+            <circle cx="150" cy="100" r="80" fill="none" stroke="#333" stroke-width="2"/>
+            <circle cx="150" cy="100" r="40" fill="#4CAF50" opacity="0.7"/>
+            <text x="150" y="105" text-anchor="middle" font-size="12" fill="white">AI 챗봇</text>
+            <path d="M150,60 Q200,100 150,140" fill="none" stroke="#FF5722" stroke-width="3"/>
+            <path d="M150,140 Q100,100 150,60" fill="none" stroke="#2196F3" stroke-width="3"/>
+            <text x="220" y="100" text-anchor="start" font-size="12">학생 입력</text>
+            <text x="80" y="100" text-anchor="end" font-size="12">AI 응답</text>
         </svg>
     </div>
 
     <div class="stage">
         <h2>성찰(Reflection)</h2>
         <p>
-            - 8개월간 학생들의 성장 과정 관찰<br>
-            - 주 3회, 1회당 2~3차시 방과후 수업 데이터 분석<br>
-            - 교사 관찰 및 면담을 통한 심층 데이터 탐색
+            - 3차 수업 설계-활동-데이터 수집-분석-조정 과정 반복<br>
+            - 학습자의 말하기 능력 변화 추적 및 분석
         </p>
-        <svg width="300" height="200" viewBox="0 0 300 200">
-            <text x="150" y="20" text-anchor="middle" font-size="14" font-weight="bold">시간에 따른 성장 과정</text>
-            <line x1="40" y1="180" x2="260" y2="180" stroke="#333" />
-            <line x1="40" y1="180" x2="40" y2="40" stroke="#333" />
+        <svg viewBox="0 0 300 200">
+            <text x="150" y="20" text-anchor="middle" font-size="14" font-weight="bold">말하기 능력 변화 추이</text>
+            <line x1="40" y1="180" x2="260" y2="180" stroke="#333"/>
+            <line x1="40" y1="180" x2="40" y2="40" stroke="#333"/>
             <polyline
                 fill="none"
                 stroke="#E91E63"
                 stroke-width="2"
                 points="
                 40,160
-                80,150
-                120,130
+                100,140
                 160,100
-                200,80
-                240,60
+                220,70
                 "
             />
             <text x="150" y="195" text-anchor="middle" font-size="12">시간</text>
-            <text x="30" y="110" text-anchor="middle" font-size="12" transform="rotate(-90 30,110)">성취도</text>
+            <text x="30" y="110" text-anchor="middle" font-size="12" transform="rotate(-90 30,110)">능력</text>
         </svg>
     </div>
 
     <div class="stage">
         <h2>의미창출(Sense-making)</h2>
         <p>
-            - AI 펭톡 활용이 영어 학습에 미치는 영향 분석<br>
-            - 학습 참여도, 정의적 영역, 영어 성취도 관계 파악<br>
-            - AI 펭톡 사용 목적과 실제 학습 성과 비교
+            - AI 챗봇 활용이 말하기 능력 향상에 미치는 영향 분석<br>
+            - 자기주도 학습과 반복 오류 수정의 발화 능력 영향 파악<br>
+            - 학습 환경 설계 목적과 실제 학습 성과 비교
         </p>
-        <svg width="300" height="200" viewBox="0 0 300 200">
-            <text x="150" y="20" text-anchor="middle" font-size="14" font-weight="bold">학습 영역 관계</text>
-            <circle cx="150" cy="100" r="80" fill="none" stroke="#333" />
-            <polygon points="150,20 230,100 150,180 70,100" fill="rgba(33,150,243,0.3)" stroke="#2196F3" />
-            <text x="150" y="30" text-anchor="middle" font-size="12">참여도</text>
-            <text x="240" y="105" text-anchor="start" font-size="12">정의적 영역</text>
-            <text x="150" y="180" text-anchor="middle" font-size="12">성취도</text>
-            <text x="60" y="105" text-anchor="end" font-size="12">AI 펭톡 활용</text>
+        <svg viewBox="0 0 300 200">
+            <text x="150" y="20" text-anchor="middle" font-size="14" font-weight="bold">AI 챗봇 활용 효과</text>
+            <rect x="50" y="40" width="60" height="140" fill="#9C27B0" opacity="0.7"/>
+            <rect x="120" y="40" width="60" height="140" fill="#FF9800" opacity="0.7"/>
+            <rect x="190" y="40" width="60" height="140" fill="#03A9F4" opacity="0.7"/>
+            <text x="80" y="190" text-anchor="middle" font-size="12">발음</text>
+            <text x="150" y="190" text-anchor="middle" font-size="12">유창성</text>
+            <text x="220" y="190" text-anchor="middle" font-size="12">정확성</text>
+            <text x="80" y="30" text-anchor="middle" font-size="12">70%</text>
+            <text x="150" y="30" text-anchor="middle" font-size="12">85%</text>
+            <text x="220" y="30" text-anchor="middle" font-size="12">78%</text>
         </svg>
     </div>
 
     <div class="stage">
         <h2>영향(Impact)</h2>
         <p>
-            - AI 펭톡의 긍정적 영향 확인<br>
-            - 교사의 적극적 개입 필요성 인식<br>
-            - 향후 AI 펭톡 활용 수업 설계에 연구 결과 반영<br>
-            - 학습부진아 지원 방안으로 AI 펭톡 활용 제안
-        </p>
-        <svg width="300" height="200" viewBox="0 0 300 200">
-            <text x="150" y="20" text-anchor="middle" font-size="14" font-weight="bold">AI 펭톡 효과</text>
-            <rect x="60" y="40" width="80" height="140" fill="#ddd" />
-            <rect x="60" y="180" width="80" height="-70" fill="#4CAF50" />
-            <rect x="160" y="40" width="80" height="140" fill="#ddd" />
-            <rect x="160" y="180" width="80" height="-112" fill="#4CAF50" />
-            <text x="100" y="190" text-anchor="middle" font-size="12">사전</text>
-            <text x="200" y="190" text-anchor="middle" font-size="12">사후</text>
-            <text x="100" y="100" text-anchor="middle" font-size="14" fill="#333">50%</text>
-            <text x="200" y="60" text-anchor="middle" font-size="14" fill="#333">80%</text>
-        </svg>
-    </div>
-</body>
-</html>
+            - AI 챗봇 활용의 말하기 능력 향상 긍정적 영향 확인<br>
+            - 학습자 피드백과 데이터 분석으로 학습 환경 지속 개선<br>
+            -
